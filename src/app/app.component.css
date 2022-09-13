@@ -1,34 +1,27 @@
 
-
 :host{
-    --blue: #1e90ff;
-    --white: #ffffff;
+  --blue: #1e90ff;
+  --white: #ffffff;
 
-    --background: #161d31;
-    --foreground: #283046;
-    --shopping-cart-counter-background: #7367f0;
-    --shopping-cart-item-hover: #161D31;
-    --text: #d0d2d6;
-    --icon: #b4b7bd;
-    --star-icon: #ff9f43;
-    --item-count-background: rgba(255,159,67,.12);
-    --circle1-text: #b2c0c3;
-    --circle1-background: rgb(255,255,255,.12);
-    --circle2-text: #00cfe8;
-    --circle2-background: rgba(0,207,232,.12);
-    --circle3-text: #ea5455;
-    --circle3-background: rgba(234,84,85,.12);
-    --circle4-text: #28c76f;
-    --circle4-background: rgba(40,199,111,.12);
-    --new-text: #28c76f;
-    --new-background: rgba(40,199,111,.12);
-  }
-
-
-.colored-text{
-    color:var(--blue);
+  --background: #161d31;
+  --foreground: #283046;
+  --shopping-cart-counter-background: #7367f0;
+  --shopping-cart-item-hover: #161D31;
+  --text: #d0d2d6;
+  --icon: #b4b7bd;
+  --star-icon: #ff9f43;
+  --item-count-background: rgba(255,159,67,.12);
+  --circle1-text: #b2c0c3;
+  --circle1-background: rgb(255,255,255,.12);
+  --circle2-text: #00cfe8;
+  --circle2-background: rgba(0,207,232,.12);
+  --circle3-text: #ea5455;
+  --circle3-background: rgba(234,84,85,.12);
+  --circle4-text: #28c76f;
+  --circle4-background: rgba(40,199,111,.12);
+  --new-text: #28c76f;
+  --new-background: rgba(40,199,111,.12);
 }
-
 
 /*sidenav creation*/
 
@@ -60,31 +53,6 @@ body{
   transition: all 0.5s ease;
 }
 
-/*profile*/
-
-
-.wrapper .sidebar .profile{
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.wrapper .sidebar .profile img{
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.wrapper .sidebar .profile h3{
-  color: #ffffff;
-  margin: 10px 0 5px;
-}
-
-.wrapper .sidebar .profile p{
-  color: rgb(206, 240, 253);
-  font-size: 14px;
-}
 
 
 
@@ -139,18 +107,6 @@ body{
   padding: 0 30px;
 
 }
-
-.wrapper .section .top_navbar .hamburger a{
-  font-size: 28px;
-  color: #f4fbff;
-}
-
-.wrapper .section .top_navbar .hamburger a:hover{
-  color: #a2ecff;
-}
-
-
-
 
 
 
