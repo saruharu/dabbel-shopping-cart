@@ -95,7 +95,6 @@ body {
     @media only screen and (min-width: 600px)  {
     .wrapper {
   
-      /* grid-template-columns: 25% auto; */
       grid-template-columns: 25% auto 44%;
       grid-template-areas:
       "a a b b"
