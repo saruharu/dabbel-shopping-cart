@@ -6,7 +6,6 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import * as dashboardComponents from './components';
 import { AppCommonModule } from '../app-common/app-common.module';
 import { MaterialModule } from '../material/material.module';
-import { GridManagerComponent } from './components/grid-manager/grid-manager.component';
 import { BoxAComponent } from './components/box-a/box-a.component';
 import { BoxBComponent } from './components/box-b/box-b.component';
 import { BoxFComponent } from './components/box-f/box-f.component';
@@ -20,7 +19,6 @@ import { BoxHComponent } from './components/box-h/box-h.component';
 @NgModule({
   declarations: [
     ...dashboardComponents.components,
-    GridManagerComponent,
     BoxAComponent,
     BoxBComponent,
     BoxFComponent,
