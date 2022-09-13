@@ -206,5 +206,10 @@
   p, span{
     color: var(--text);
   }
+
+  .title-roww{
+    padding-top: 21px;
+
+  }
   
   

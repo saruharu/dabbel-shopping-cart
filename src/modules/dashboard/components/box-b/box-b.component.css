@@ -144,6 +144,7 @@
     .title-row{
       display: flex;
       font-size: 14px;
+      padding-top: 21px;
     }
   
     .app-spacer{
@@ -187,6 +188,7 @@
   
   .items-web-display{
     display: flex;
+    padding-top: 31px;
   
   }
   
