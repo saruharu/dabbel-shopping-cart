@@ -1,0 +1,34 @@
+<div class="sidebar">
+    <!--profile image & text-->
+    <div class="dropdown">
+        <div class="drop-down-menu-section">
+            <mat-icon class="sidenav-icon" svgIcon="home"></mat-icon>
+            <span class="text-color">Home</span>
+            <span class="app-spacer"></span>
+
+            <div class="dashboard-badge-section">
+                <span>2</span>
+            </div>
+            <mat-icon svgIcon="arrow-down" class="arrow-down"></mat-icon>
+
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-item">
+                <mat-icon class="sidenav-icon" svgIcon="home"></mat-icon>
+                <a href="#">Home</a>
+            </div>
+            <div class="dropdown-item">
+                <mat-icon class="sidenav-icon" svgIcon="home"></mat-icon>
+                <a href="#">Moderator Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--category1-->
+    <app-menu-category [categoryList]="menuCategory1" [categoryTitle]="categoryTitle_1" [platform]="platform"></app-menu-category>
+
+    <!--category2-->
+    <app-menu-category [categoryList]="menuCategory2" [categoryTitle]="categoryTitle_2" [platform]="platform"></app-menu-category>   
+</div>

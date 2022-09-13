@@ -1,0 +1,22 @@
+  <div class="box b">
+
+ <div class="title-row">
+        <p class="box-b-title">{{box_b?.title}}</p>
+        <span class="app-spacer"></span>
+        <p class="box-b-side-title">{{box_b?.side_title}}</p>
+    </div>
+    <div class="items-div" 
+    [ngClass]="{'items-web-display': platform === 'web', 'items-tablet-display' : platform === 'tablet', 
+    'items-mobile-display' : platform === 'mobile' }">
+
+      <div class="oneitem-div" *ngFor="let oneitem of box_b?.circles">
+        <div class="img-div" [ngStyle]="{'background-color': oneitem?.img_background, 'color': oneitem?.img_color}">img</div>
+        <div class="text-div">
+          <span class="text-number">{{oneitem?.number}}</span>
+          <span>{{oneitem?.text}}</span>
+        </div>
+
+      </div>
+    </div>
+
+    </div>

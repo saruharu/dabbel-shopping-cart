@@ -1,0 +1,46 @@
+<div mat-dialog-title class="dialog-title">
+    <p class="cart-title">My Cart</p>
+    <span class="app-spacer"></span>
+    <div class="cart-count-badge">
+        <p class="cart-count-text">{{currentShoppingCart.getTotalCount()}} Items</p>
+    </div>
+</div>
+<div mat-dialog-content>
+  <div class="item-line" *ngFor="let itemGroup of currentShoppingCart.getCartItemGroups()">
+    <p class="cart-item-name">{{itemGroup.getItem().getName() | titlecase}}</p>
+        <span class="app-spacer"></span>
+
+        <div class="quantity-div">
+          <button mat-icon-button (click)="reduceQuantity(itemGroup)">
+            <mat-icon svgIcon="minus" class="edit-count-icon"></mat-icon>
+          </button>
+          <div class="quantity-inner-div">
+            <p class="quantity-paragraph">{{itemGroup.getCount()}}</p>
+          </div>
+          <button mat-icon-button (click)="addQuantity(itemGroup)">
+            <mat-icon svgIcon="plus" class="edit-count-icon"></mat-icon>
+          </button>
+
+        </div>
+    
+    <span class="app-spacer"></span>
+
+    <div class="price-x-div">
+        <mat-icon svgIcon="x" (click)="removeItemGroup(itemGroup)"
+        class="x-remove-icon"></mat-icon>
+        <p class="price-paragraph">{{CURRENCY}}{{itemGroup.getItemTotalPrice() | number : '1.0-2'}}</p>
+    </div>
+    
+  </div>
+  
+  <div class="total-line">
+    <p class="total-label">Total:</p>
+    <span class="app-spacer"></span>
+
+    <p class="total-price">{{CURRENCY}}{{currentShoppingCart.getTotalPrice() | number : '1.0-2'}}</p>
+    
+  </div>
+</div>
+<div mat-dialog-actions class="checkout-div">
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="checkout()" class="checkout-button">Checkout</button>
+</div>

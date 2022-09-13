@@ -1,0 +1,19 @@
+<div class="category-section">
+<p class="category-title">{{categoryTitle | uppercase}}</p>
+    <ul>
+        <li *ngFor="let item of categoryList" class="list-item">
+            <div class="category-line">
+                <mat-icon class="item-icon" [svgIcon]="item.getIcon()"></mat-icon>
+                <p class="item-name">{{item.getName()}}</p>
+                <span class="app-spacer"></span>
+                <div *ngIf="item.getIsNew()" class="new-badge-section">
+                    <span>new</span>
+                </div>
+                
+                <mat-icon *ngIf="item?.hasSubItems()" class="arrow-right" [svgIcon]="(menuOpen)? 'arrow-down': 'arrow-right'" (click)="openSubItems(item)"
+                ></mat-icon>
+            </div>       
+        </li>
+
+    </ul>
+</div>

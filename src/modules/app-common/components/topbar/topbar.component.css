@@ -1,0 +1,106 @@
+
+/*top menu*/
+.wrapper .section{
+    width: calc(100% - 297px);
+    margin-left: 297px;
+    transition: all 0.5s ease;
+  }
+  
+.top_navbar{
+    background: #283046;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;  
+  }
+
+
+  .app-spacer{
+    flex: 1px;
+
+  }
+  
+.top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+  }
+  
+  .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+  }
+  
+
+.user-section span{
+    color: var(--text);
+    text-align: end;
+  }
+
+.user-section{
+  display: grid;
+}
+
+.user-role{
+}
+
+.user-name{
+  font-weight: bold;
+
+}
+
+
+
+
+
+.icon-badge-group .icon-badge-container {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.icon-badge-group .icon-badge-container:first-child {
+  margin-left: 0
+}
+
+.icon-badge-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-badge-icon {
+  font-size: 30px;
+  position: relative;
+}
+
+.icon-badge {
+    background-color: var(--shopping-cart-counter-background);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    right: 0px;
+}
+
+.icons-left{
+  align-items: center;
+  display: flex;
+}
+
+
+.item-icon{
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  color:var(--icon);
+}
+
+.star-icon{
+  color:var(--star-icon)!important;
+}

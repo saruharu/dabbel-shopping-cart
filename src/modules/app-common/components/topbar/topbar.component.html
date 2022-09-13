@@ -1,0 +1,45 @@
+<div class="top_navbar">
+
+
+    <div class="icons-right" *ngIf="platform=='web'">
+    
+        <mat-icon class="item-icon" svgIcon="calendar"></mat-icon>
+        <mat-icon class="item-icon" svgIcon="message-square"></mat-icon>
+        <mat-icon class="item-icon" svgIcon="mail"></mat-icon>
+        <mat-icon class="item-icon" svgIcon="check-square"></mat-icon>
+        <mat-icon class="item-icon star-icon" svgIcon="star"></mat-icon>
+
+    </div>
+
+    <div class="icons-right" *ngIf="platform!='web'">
+    
+        <mat-icon class="item-icon" svgIcon="menu"></mat-icon>
+
+
+    </div>
+
+    <span class="app-spacer"></span>
+    
+    <div class="icons-left">
+
+        <mat-icon class="item-icon" svgIcon="search"></mat-icon>
+        <mat-icon  *ngIf="currentCount==0" class="item-icon" svgIcon="shopping-cart" (click)="openCartPopUp()"></mat-icon>
+
+        <div class="icon-badge-container" *ngIf="currentCount!=0">
+            <mat-icon class="item-icon" svgIcon="shopping-cart" (click)="openCartPopUp()"></mat-icon>
+            <div class="icon-badge">{{currentCount}}</div>
+        </div>
+        <mat-icon class="item-icon" svgIcon="bell"></mat-icon>
+
+
+
+    </div>
+
+    <div class="user-section"  *ngIf="platform!='mobile'">
+        <span class="user-name">{{user?.username}}</span>
+        <span class="user-role">{{user?.role}}</span>
+
+
+    </div>
+
+</div>

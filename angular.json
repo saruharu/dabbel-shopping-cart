@@ -24,10 +24,13 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "shopping_cart_items.json", "input": "./", "output": "./assets/" }
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss",
+              "src/styles.css",
+              "src/colors.css"
             ],
             "scripts": []
           },
@@ -94,7 +97,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/colors.css"
+
             ],
             "scripts": []
           }

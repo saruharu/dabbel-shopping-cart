@@ -1,0 +1,152 @@
+
+::ng-deep .mat-dialog-container{
+    background-color: #283046;
+}
+
+::ng-deep .mat-dialog-content{
+    padding: 0px;
+}
+
+
+.cart-title{
+    margin-bottom:0px;
+}
+
+.cart-count-badge{
+    background-color:#30375a;
+    border-radius:24px;
+    background-color: #30375a;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 39px;
+    padding-left: 9px;
+    padding-right: 9px;
+    align-items: center;
+}
+.cart-count-text{
+    color: #7367f0;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle; 
+    font-size:16px;
+}
+.dialog-title{
+    display: flex;
+    color: #d0d2d6;
+    align-items: center;
+}
+
+.item-line{
+    display: flex;
+    border-top: solid 1px #565c6d;
+    padding: 10px;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #d0d2d6;
+
+}
+
+.item-line:hover{
+    background-color: #161d31;
+}
+
+.total-line{
+    display: flex;
+    border-top: solid 1px #565c6d;
+    padding: 20px 24px 0px 24px;
+    align-items: center;
+    color: #d0d2d6;
+    font-size: 18px;
+    
+    
+}
+
+.price-paragraph{
+    margin: 0px;text-align: end;  font-size:18px;
+}
+
+.total-label{
+    font-weight:bold;
+}
+
+
+.app-spacer{
+    flex-grow: 1;
+  
+}
+
+.total-price{
+    color: #7367f0;
+    font-weight: bold;
+}
+
+.checkout-div{
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-button{
+  width: 100%;
+  color: #d0d2d6;
+  background-color: #7367f0;
+}
+
+
+.quantity-div{
+    display: inline-flex;
+    padding-right: 5px;
+    justify-content: center;
+    /* vertical-align: middle; */
+    align-items: center;
+    border-radius: 8px;
+    border: 1px #565c6d solid;
+    background: #283046;
+}
+
+.price-x-div{
+    display: table; width:64px; position: relative;
+}
+
+.quantity-inner-div{
+    width: 46px; display: flex; justify-content: center;
+}
+.quantity-paragraph{
+    margin-bottom: 0px;
+    border-right: 1px solid #565c6d;
+    border-left: 1px solid #565c6d;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+}
+
+
+.x-remove-icon{
+    display: none;
+    color:#d0d2d6;
+    justify-self: right;
+    width:12px;
+    height:12px;
+    cursor:pointer;
+    margin-top: -11px;
+    position: absolute;
+    right: 0px;
+}
+
+
+.item-line:hover .x-remove-icon {
+    display: block;
+}
+
+.cart-item-name{
+    margin: 0px; font-size:18px;
+}
+
+.edit-count-icon{
+    color:#d0d2d6;
+}

@@ -3,7 +3,26 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  CURRENCY: "$",
+  items: [
+    {
+      "name": "item 1",
+      "price": 339.99
+    },
+    {
+      "name": "item 2",
+      "price": 129.29
+    },
+    {
+      "name": "item 3",
+      "price": 669.99
+    },
+    {
+      "name": "item 4",
+      "price": 999.99
+    }
+  ]
 };
 
 /*
