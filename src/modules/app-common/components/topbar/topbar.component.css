@@ -69,6 +69,7 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
+    margin-top: 7px;
 }
 
 .icon-badge-icon {

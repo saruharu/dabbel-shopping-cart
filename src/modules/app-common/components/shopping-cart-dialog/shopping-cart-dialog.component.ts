@@ -8,7 +8,6 @@ import { Item } from 'src/modules/shopping-cart/models/item';
 import { CartService } from 'src/modules/shopping-cart/services/cart.service';
 
 const CURRENCY = environment.CURRENCY;
-export const itemsList = environment.items;
 @Component({
   selector: 'app-shopping-cart-dialog',
   templateUrl: './shopping-cart-dialog.component.html',
@@ -22,7 +21,6 @@ export class ShoppingCartDialogComponent implements OnInit,OnChanges {
 
   ngOnInit(): void {
     
-    this.createItems();
     this.initCart();
   }
 
@@ -35,15 +33,10 @@ export class ShoppingCartDialogComponent implements OnInit,OnChanges {
   items: Item[] = []
   CURRENCY =CURRENCY
 
-  createItems(){
-    this.items = itemsList.map(element=>new Item(element))
-  }
   currentShoppingCart = new Cart([])
   async initCart(){
 
-    this.cartService.setCurrentCart(this.currentShoppingCart);
     this.currentShoppingCart = await this.cartService.getCart()
-    console.log('awit',await this.cartService.getCart())
   }
   
 
